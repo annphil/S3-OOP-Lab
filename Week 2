@@ -1,0 +1,140 @@
+1/12/21
+Lab 1
+
+1) Palindrome
+import java.util.Scanner;
+
+class _1MatrMult{
+	public static void main(String[ ] args){
+		//Input object
+		Scanner sc = new Scanner(System.in);
+		int a, x;
+	
+		int A[ ][ ] = new int[20][20];
+		int B[ ][ ] = new int[20][20];
+		int C[ ][ ] = new int[20][20];
+	
+		System.out.print("Enter order of 1st matrix: " );
+		int m = sc.nextInt();
+		int n = sc.nextInt();
+	
+		System.out.print("Enter order of 2nd matrix: " );
+		int p = sc.nextInt();
+		int q = sc.nextInt();
+	
+		System.out.println("Enter elements of 1st matrix: ");
+		for (int i=0; i<m; i++){
+			for(int j=0; j<n; j++){
+				A[i][j] = sc.nextInt();
+				}
+			}
+	
+		System.out.println("Enter elements of 2nd matrix: ");
+		for (int i=0; i<p; i++){
+			for(int j=0; j<q; j++){
+				B[i][j] = sc.nextInt();
+				}
+			}
+	
+		if (n == p){
+			for (int i=0; i<m; i++){
+					for(int k=0; k<q; k++){
+						x=0;
+						for(int j=0; j<q; j++){
+							x = x + (A[i][j] * B[j][i]);
+							}
+						C[i][k] = x;
+						}
+					}	
+			System.out.println("Result matrix: ");
+			for (int i=0; i<m; i++){
+				for(int j=0; j<n; j++){
+					System.out.println(C[i][j] + " ");
+				}
+			}
+		}
+		else 
+			System.out.println("Cannot be multiplied ");	
+	}
+}
+
+2)
+import java.util.Scanner;
+
+class _1Frequency{
+		 public static void main(String[] args){
+		
+		Scanner sc = new Scanner(System.in);
+		int count = 0;
+		
+		System.out.print("Enter String: ");
+		String A = sc.nextLine();
+		
+		System.out.print("Enter character: ");
+		char a = sc.next().charAt(0);
+		
+		for(int i=0; i<A.length(); i++){
+			if(A.charAt(i) == a)
+				count++;
+			}
+		
+		System.out.print("Count = " + count "\n");
+		}
+}
+
+3)
+import java.util.Scanner;
+
+class _1MatrMult{
+	public static void main(String[ ] args){
+		//Input object
+		Scanner sc = new Scanner(System.in);
+		int a, x;
+	
+		int A[ ][ ] = new int[20][20];
+		int B[ ][ ] = new int[20][20];
+		int C[ ][ ] = new int[20][20];
+	
+		System.out.print("Enter order of 1st matrix: " );
+		int m = sc.nextInt();
+		int n = sc.nextInt();
+	
+		System.out.print("Enter order of 2nd matrix: " );
+		int p = sc.nextInt();
+		int q = sc.nextInt();
+	
+		System.out.println("Enter elements of 1st matrix: ");
+		for (int i=0; i<m; i++){
+			for(int j=0; j<n; j++){
+				A[i][j] = sc.nextInt();
+				}
+			}
+	
+		System.out.println("Enter elements of 2nd matrix: ");
+		for (int i=0; i<p; i++){
+			for(int j=0; j<q; j++){
+				B[i][j] = sc.nextInt();
+				}
+			}
+	
+		if (n == p){
+			for (int i=0; i<m; i++){
+					for(int k=0; k<q; k++){
+						x=0;
+						for(int j=0; j<q; j++){
+							x = x + (A[i][j] * B[j][i]);
+							}
+						C[i][k] = x;
+						}
+					}	
+			System.out.println("Result matrix: ");
+			for (int i=0; i<m; i++){
+				for(int j=0; j<n; j++){
+					System.out.println(C[i][j] + " ");
+				}
+			}
+		}
+		else 
+			System.out.println("Cannot be multiplied ");	
+	}
+}
