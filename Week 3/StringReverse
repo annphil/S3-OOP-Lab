@@ -1,0 +1,19 @@
+class StringReverse{
+	public static void main(String[ ] args){
+		
+		String rev= " ";
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter string: ");
+		String A = sc.nextLine();
+		
+		int n = A.length();
+		
+		for(int i=0; i<A.length(); i++){
+		rev = rev+ A.charAt(n-1);
+		n--;
+		}
+		
+		System.out.println("Reversed array : " + rev);
+	}
