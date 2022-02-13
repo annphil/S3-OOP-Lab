@@ -1,0 +1,20 @@
+class _1Frequency{
+		 public static void main(String[] args){
+		
+		Scanner sc = new Scanner(System.in);
+		int count = 0;
+		
+		System.out.print("Enter String: ");
+		String A = sc.nextLine();
+		
+		System.out.print("Enter character: ");
+		char a = sc.next().charAt(0);
+		
+		for(int i=0; i<A.length(); i++){
+			if(A.charAt(i) == a)
+				count++;
+			}
+		
+		System.out.print("Count = " + count "\n");
+		}
+}
