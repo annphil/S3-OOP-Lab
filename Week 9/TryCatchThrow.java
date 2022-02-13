@@ -2,7 +2,7 @@ import java.lang.Exception;
 
 class Demo{
 
-	void checkAge(int age) {//throws ArthmeticException{
+	void checkAge(int age) throws ArithmeticException{
 		if(age <18)
 			throw new ArithmeticException("Access denied, you must be 18+ \n");
 		else
